@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Charmonman|Montserrat" rel="stylesheet">
@@ -9,8 +13,9 @@
         <title>Carolina Maciel</title>
         <script>
             function inConstruct(){
-                    alert("Seção em construção!");
+              swal ( "Ops!" ,  "Módulo em construção!" ,  "error" )
             }
+
         </script>
     </head>
     
@@ -46,21 +51,46 @@
             <!--section 2-->
                 <section id="sec-pg-2">
                    <div class="col-sm-12 box-sm col-md-12 col-lg-12 intro">
-                        <p>
-                            Brasileira, 20 anos, Técnica em Informática e Estudante de Engenharia da computação pelo Instituto Federal de Educação Ciência e Tecnologia do Ceará. Bolsista de Iniciação Científica do Projeto Reddi na fábrica de software IMTS (2018), aprendiz de desenvolvimento mobile Android nativo.  
-                        </p> 
+
                        
-                        <a href="https://github.com/carolinamaciel1">
-                            <img src="imgs/github.png" class="img-icons" alt="github link"/>
-                       </a>
+                        <p>
+                            <b>Quem sou eu?</b><br>     
+                            Brasileira, 21 anos, Técnica em Informática e Estudante de Engenharia da computação pelo Instituto Federal de Educação Ciência e Tecnologia do Ceará. Bolsista de Iniciação Científica do laboratório LIT, aprendiz de desenvolvimento e desenvolvimento mobile Android nativo.  
+                        </p> 
+
+                          <a href="https://github.com/carolinamaciel1">
+                                <img src="imgs/github.png" class="img-icons" alt="github link"/>
+                           </a>
+                            
+                           <a href="https://www.instagram.com/carolinamaciel1/">
+                               <img src="imgs/instagram-logo.png" class="img-icons"/>
+                           </a>
                         
-                       <a href="https://www.instagram.com/carolinamaciel1/">
-                           <img src="imgs/instagram-logo.png" class="img-icons"/>
-                       </a>
-                    
-                       <a href="mailto:carolinamaciel37@gmail.com">
-                           <img src="imgs/arroba.png" class="img-icons"/>
-                       </a>
+                           <a href="mailto:carolinamaciel37@gmail.com">
+                               <img src="imgs/arroba.png" class="img-icons"/>
+                           </a>
+                         <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#exampleModalLong">
+                            EN
+                        </button>
+
+                          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">How am i?</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                               Brazilian, 21 years, Technician in Computer Science and Student of Computer Engineering by the Federal Institute of Education Science and Technology of Ceará. Scientific Initiation Scholar of LIT laboratory, apprentice of web and mobile development.
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-small btn-secondary" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>                
                     </div>
                 </section>
             <!--section 2-->
@@ -69,9 +99,6 @@
               <!--section 3-->
                 <section id="sec-pg-3" >
                     <div class="container">
-                       
-                        
-                        
                         <div class="row">
                           <div class="col-md-4 box">
                             <div class="thumbnail">
